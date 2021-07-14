@@ -24,6 +24,12 @@
   list-style: none;
   margin-bottom: 32px;
   text-align: center;
+
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+
 }
 
 .footer-container__link {
@@ -43,8 +49,8 @@
   }
 }
 
-.footer-container__content:last-child {
-  margin-bottom: 0;
+.footer-container__link.active{
+  color: $link-hover
 }
 
 .footer-social {

@@ -61,14 +61,13 @@ img {
 
 .header-nav {
   background-color: #33323D;
+  margin-top: 0;
   padding: 40px 0px;
   position: absolute;
   right: 0;
   display: none;
   top: 100px;
   width: 223px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
   z-index: 10;
 }
 
@@ -93,7 +92,7 @@ img {
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -196,12 +195,8 @@ img {
   background-position: center center;
   width: 100%;
   height: 310px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  text-align: center;
+  top: -25px;
   position: absolute;
-  margin-bottom: 24px;
 }
 
 .site-hero__title {
@@ -228,7 +223,7 @@ img {
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #fff;
   position: relative;
   cursor: pointer;
   display: -webkit-inline-box;
@@ -587,6 +582,10 @@ img {
   text-align: center;
 }
 
+.footer-container__content:last-child {
+  margin-bottom: 0;
+}
+
 .footer-container__link {
   font-family: "Public Sans";
   font-size: 12px;
@@ -605,8 +604,8 @@ img {
   color: #5fb4a2;
 }
 
-.footer-container__content:last-child {
-  margin-bottom: 0;
+.footer-container__link.active {
+  color: #5fb4a2;
 }
 
 .footer-social {

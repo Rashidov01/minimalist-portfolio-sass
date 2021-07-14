@@ -1,12 +1,12 @@
 .header-nav {
-  background-color: #33323D;
+  background-color: $main-color;
+  margin-top: 0;
   padding: 40px 0px;
   position: absolute;
   right: 0;
   display: none;
   top: 100px;
   width: 223px;
-  transition: 0.5s ease;
   z-index: 10;
 }
 
@@ -18,10 +18,10 @@
   list-style-type: none;
   margin-bottom: 32px;
   text-align: center;
-}
 
-.header-nav__item:last-child {
-  margin-bottom: 0;
+  &:last-child{
+    margin-bottom: 0;
+  }
 }
 
 .header-nav__link {
@@ -31,7 +31,7 @@
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: $light-color;
   text-decoration: none;
   transition: 0.5s ease;
 
@@ -62,7 +62,7 @@
     line-height: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #33323D;
+    color: $main-color;
     white-space: nowrap;
   }
 
