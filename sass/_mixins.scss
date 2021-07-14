@@ -1,0 +1,38 @@
+@mixin flex($justify) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+}
+
+@mixin flex-direction($flex-direction) {
+  display: flex;
+  align-items: center;
+  flex-direction: $flex-direction;
+}
+
+@mixin bg-image ($size, $position, $width, $height) {
+  background-repeat: no-repeat;
+  background-size: $size;
+  background-position: $position;
+  width: $width;
+  height: $height;
+}
+
+@mixin primaryBtn {
+  font-family: $text-font;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  box-sizing: border-box;
+  color: #33323D;
+  padding: 16px 32px;
+  text-decoration: none;
+  transition: 0.5s ease;
+
+  &:hover {
+    background-color: #33323D;
+    color: #fff;
+  }
+}
