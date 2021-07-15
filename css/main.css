@@ -1089,7 +1089,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 32px;
   margin: 64px 0 65px 0;
   border-top: 1px solid rgba(51, 50, 61, 0.15);
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
@@ -1100,42 +1099,32 @@ img {
   width: 50%;
   height: 100%;
   padding: 32px 0;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.fylo-left ::before, .insure-left ::before {
-  content: '';
-  position: absolute;
-  background-image: url(../../img/<.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 8px;
-  height: 16px;
-  left: -35px;
-  top: 60px;
-  cursor: pointer;
+.fylo-left__info {
+  padding-left: 25px;
 }
 
 .fylo-right, .insure-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: right;
-}
-
-.fylo-right, .insure-right {
+  margin-left: auto;
   padding: 32px 0;
-  position: relative;
 }
 
-.fylo-right ::after, .insure-right ::after {
-  content: '';
-  position: absolute;
-  background-image: url(../../img/>.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 8px;
-  height: 16px;
-  right: -35px;
-  top: 60px;
-  cursor: pointer;
+.fylo-right__info {
+  padding-right: 25px;
 }
 
 .fylo-title, .insure-title {

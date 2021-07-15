@@ -1,6 +1,5 @@
 .fylo {
   @include flex (space-between);
-  padding: 0 32px;
   margin: 64px 0 65px 0;
   border-top: 1px solid rgba(51, 50, 61, 0.15);
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
@@ -11,42 +10,24 @@
   width: 50%;
   height: 100%;
   padding: 32px 0;
-  position: relative;
-
-  ::before {
-    content: '';
-    position: absolute;
-    background-image: url(../../img/<.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 8px;
-    height: 16px;
-    left: -35px;
-    top: 60px;
-    cursor: pointer;
-  }
+  display: flex;
+  align-items: center;
 }
 
-.fylo-right{
-  text-align: right;
+.fylo-left__info{
+  padding-left: 25px;
 }
 
 .fylo-right {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  margin-left: auto;
   padding: 32px 0;
-  position: relative;
+}
 
-  ::after {
-    content: '';
-    position: absolute;
-    background-image: url(../../img/>.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 8px;
-    height: 16px;
-    right: -35px;
-    top: 60px;
-    cursor: pointer;
-  }
+.fylo-right__info{
+  padding-right: 25px;
 }
 
 .fylo-title {

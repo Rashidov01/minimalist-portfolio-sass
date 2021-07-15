@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../sass/blocks/fylo-page.scss"
-    ],
-    "names": [],
-    "file": "fylo-page.css"
-}
