@@ -24,15 +24,15 @@
   line-height: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  border: 1px solid #33323D;
+  border: 1px solid $main-color;
   box-sizing: border-box;
-  color: #33323D;
+  color: $main-color;
   padding: 16px 32px;
   text-decoration: none;
   transition: 0.5s ease;
 
   &:hover {
-    background-color: #33323D;
-    color: #fff;
+    background-color: $main-color;
+    color: $light-color;
   }
 }
