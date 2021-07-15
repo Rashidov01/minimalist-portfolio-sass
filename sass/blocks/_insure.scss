@@ -1,0 +1,45 @@
+.insure {
+  @extend .fylo;
+}
+
+.insure-left {
+  @extend .fylo-left;
+
+  ::before {
+    content: '';
+    position: absolute;
+    background-image: url(../../img/<.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 8px;
+    height: 16px;
+    left: -35px;
+    top: 60px;
+    cursor: pointer;
+  }
+}
+
+.insure-right {
+  @extend .fylo-right;
+
+  ::after {
+    content: '';
+    position: absolute;
+    background-image: url(../../img/>.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 8px;
+    height: 16px;
+    right: -35px;
+    top: 60px;
+    cursor: pointer;
+  }
+}
+
+.insure-title {
+  @extend .fylo-title;
+}
+
+.insure-content {
+  @extend .fylo-content;
+}

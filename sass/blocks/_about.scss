@@ -14,7 +14,7 @@
 }
 
 .self__img-box{
-  background-image: url(../../img/self.jpg);
+  background-image: url('../../img/self.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -42,7 +42,7 @@
 }
 
 .about-btn{
-  @include primaryBtn
+  @include primaryBtn;
 }
 
 .self__img-box {
@@ -58,22 +58,21 @@
   display: block;
 }
 
-@media only screen and (min-width:560px) {
-.self__img-box{
-  background-position: center center;
-}
+@include breakpoint-up (560px){
+  .self__img-box{
+    background-position: center center;
+  }
 }
 
-
-@media only screen and (min-width:768px) {
+@include breakpoint-up (768px){
   .about{
     @include flex (space-between);
     flex-direction: row;
   }
   .self__img-box{
-    background-image: url(../../img/self-img-tablet@2x.jpg);
+    background-image: url('../../img/self-img-tablet@2x.jpg');
     width: 281px;
-    height: 620px;
+    height: 590px;
     margin-bottom: 0;
   }
 
@@ -87,11 +86,11 @@
   }
 }
 
-@media only screen and (min-width: 960px) {
+@include breakpoint-up (968px){
   .self__img-box{
-    background-image: url(../../img/self@2x.jpg);
+    background-image: url('../../img/self@2x.jpg');
     width: 50%;
-    height: 620px;
+    height: 590px;
   }
 
   .about-desc{

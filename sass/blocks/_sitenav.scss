@@ -48,8 +48,7 @@
 
   /* header-nav */
   .header-nav {
-    display: flex;
-    align-items: center;
+    @include flex (space-between);
     background-color: transparent;
     padding: 0;
     position: relative;
@@ -79,10 +78,10 @@
 @media only screen and (min-width:768px) {
   .header-nav {
     position: relative;
-    right: 180px;
+    right: 120px;
   }
 
   .header-nav__item {
-    margin-right: 42px;
+    margin-right: 15px;
   }
 }

@@ -29,6 +29,15 @@ html {
           box-sizing: inherit;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,6 +124,9 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-color: transparent;
     padding: 0;
     position: relative;
@@ -141,10 +153,10 @@ img {
 @media only screen and (min-width: 768px) {
   .header-nav {
     position: relative;
-    right: 180px;
+    right: 120px;
   }
   .header-nav__item {
-    margin-right: 42px;
+    margin-right: 15px;
   }
 }
 
@@ -216,8 +228,6 @@ img {
   outline: none;
   border: none;
   font-family: "Public Sans";
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: 14px;
   text-align: center;
@@ -237,12 +247,12 @@ img {
 .site-hero__btn::before {
   content: '';
   position: absolute;
-  background-image: url(../../img/V.svg);
   background-repeat: no-repeat;
-  background-position: center center;
   background-size: 20px 16px;
+  background-position: center center;
   width: 48px;
   height: 48px;
+  background-image: url(../../img/V.svg);
   background-color: rgba(0, 0, 0, 0.1);
   left: 0;
   top: 0;
@@ -340,7 +350,7 @@ img {
 }
 
 .self__img-box {
-  background-image: url(../../img/self.jpg);
+  background-image: url("../../img/self.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -424,9 +434,9 @@ img {
             flex-direction: row;
   }
   .self__img-box {
-    background-image: url(../../img/self-img-tablet@2x.jpg);
+    background-image: url("../../img/self-img-tablet@2x.jpg");
     width: 281px;
-    height: 620px;
+    height: 590px;
     margin-bottom: 0;
   }
   .about {
@@ -446,11 +456,11 @@ img {
   }
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 968px) {
   .self__img-box {
-    background-image: url(../../img/self@2x.jpg);
+    background-image: url("../../img/self@2x.jpg");
     width: 50%;
-    height: 620px;
+    height: 590px;
   }
   .about-desc {
     margin-right: 60px;
@@ -460,6 +470,7 @@ img {
 /* interesting-doing */
 .doing {
   margin-bottom: 150px;
+  margin-top: 50px;
 }
 
 .doing-heading {
@@ -543,7 +554,7 @@ img {
 
 @media only screen and (min-width: 1200px) {
   .doing-heading::after {
-    width: 534;
+    width: 510px;
     left: 110%;
   }
 }
@@ -809,6 +820,545 @@ img {
   }
   .contact-form__input {
     min-width: 635px;
+  }
+}
+
+.main-section__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-section__box {
+  padding: 34px 0 48px 0;
+  margin-top: 32px;
+  margin-bottom: 70px;
+  padding-left: 0;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+
+.main-section__img {
+  width: 100%;
+}
+
+.main-section__box-title {
+  font-family: "Ibarra Real Nova";
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323D;
+  margin-bottom: 24px;
+}
+
+.main-section__box-text {
+  font-family: "Public Sans";
+  font-size: 15px;
+  line-height: 30px;
+  color: #33323D;
+  opacity: 0.8;
+  margin-bottom: 28px;
+}
+
+.main-section__box-link {
+  font-family: "Public Sans";
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #33323D;
+  padding: 16px 32px;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.main-section__box-link:hover {
+  background-color: #33323D;
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-section__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .main-section__content:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .main-section__content:nth-child(even) .main-section__box {
+    margin-left: 0;
+    margin-right: 70px;
+  }
+  .main-section__img {
+    width: 50%;
+  }
+  .main-section__box {
+    padding: 34px 0 50px 0;
+    margin-left: 70px;
+    margin-bottom: 40px;
+  }
+  .main-section__box-title {
+    margin-bottom: 30px;
+  }
+  .main-section__box-text {
+    margin-bottom: 35px;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .main-section__content {
+    margin-bottom: 80px;
+  }
+  .main-section__content:nth-child(even) .main-section__box {
+    margin-left: 90px;
+  }
+  .main-section__img {
+    max-width: 540px;
+  }
+  .main-section__box-text {
+    width: 350px;
+  }
+  .main-section__box {
+    padding: 60px 0 110px 0;
+    margin-right: 90px;
+  }
+  .main-section__img {
+    max-height: 460px;
+  }
+}
+
+.manage-section__img, .bookmark-section__img, .detail-section__img, .last-section__img {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.manage-site__title, .bookmark-site__title, .detail-site__title, .last-site__title {
+  font-family: "Ibarra Real Nova";
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323D;
+  margin-bottom: 24px;
+}
+
+.manage-site__text, .bookmark-site__text, .detail-site__text, .last-site__text {
+  font-family: "Public Sans";
+  font-size: 15px;
+  line-height: 30px;
+  color: #33323D;
+  opacity: 0.8;
+  margin-bottom: 24px;
+}
+
+.manage-section__links, .bookmark-section__links, .detail-section__links, .last-section__links {
+  list-style-type: none;
+  padding-bottom: 5px;
+}
+
+.manage-section__link, .bookmark-section__link, .detail-section__link, .last-section__link {
+  font-family: "Public Sans";
+  font-size: 13px;
+  line-height: 30px;
+  color: #5FB4A2;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.manage-section__btn {
+  font-family: "Public Sans";
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #33323D;
+  padding: 16px 32px;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.manage-section__btn:hover {
+  background-color: #33323D;
+  color: #fff;
+}
+
+.manage-section__info-site, .bookmark-section__info-site, .detail-section__info-site, .last-section__info-site {
+  padding: 30px 0 50px 0;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+}
+
+.manage-background__title, .manage-background__content, .bookmark-background__content, .detail-background__content, .last-background__content, .bookmark-background__title, .detail-background__title, .last-background__title {
+  font-family: "Ibarra Real Nova";
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -0.285714px;
+  color: #33323D;
+  margin-bottom: 24px;
+}
+
+.manage-background__desc, .bookmark-background__desc, .detail-background__desc, .last-background__desc {
+  font-family: "Public Sans";
+  font-size: 15px;
+  line-height: 30px;
+  color: #33323D;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.manage-background__img, .bookmark-background__img, .detail-background__img, .last-background__img {
+  width: 100%;
+}
+
+.manage-background__img:not(:last-child), .bookmark-background__img:not(:last-child), .detail-background__img:not(:last-child), .last-background__img:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .manage-site__text, .bookmark-site__text, .detail-site__text, .last-site__text {
+    width: 535px;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .manage-section__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .manage-section__info-site, .bookmark-section__info-site, .detail-section__info-site, .last-section__info-site {
+    margin-right: 90px;
+    padding-top: 25px;
+    height: 450px;
+    margin-bottom: 0;
+  }
+  .manage-site__text, .bookmark-site__text, .detail-site__text, .last-site__text {
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1110px) {
+  .manage-section__info-site, .bookmark-section__info-site, .detail-section__info-site, .last-section__info-site {
+    margin-right: 125px;
+  }
+}
+
+.fylo, .insure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 32px;
+  margin: 64px 0 65px 0;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+
+.fylo-left, .insure-left {
+  border-right: 1px solid rgba(51, 50, 61, 0.15);
+  width: 50%;
+  height: 100%;
+  padding: 32px 0;
+  position: relative;
+}
+
+.fylo-left ::before, .insure-left ::before {
+  content: '';
+  position: absolute;
+  background-image: url(../../img/<.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 8px;
+  height: 16px;
+  left: -35px;
+  top: 60px;
+  cursor: pointer;
+}
+
+.fylo-right, .insure-right {
+  text-align: right;
+}
+
+.fylo-right, .insure-right {
+  padding: 32px 0;
+  position: relative;
+}
+
+.fylo-right ::after, .insure-right ::after {
+  content: '';
+  position: absolute;
+  background-image: url(../../img/>.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 8px;
+  height: 16px;
+  right: -35px;
+  top: 60px;
+  cursor: pointer;
+}
+
+.fylo-title, .insure-title {
+  font-family: "Ibarra Real Nova";
+  font-size: 25px;
+  line-height: 36px;
+  letter-spacing: -0.285714px;
+  color: #33323D;
+  margin-bottom: 5px;
+}
+
+.fylo-content, .insure-content {
+  font-family: "Public Sans";
+  font-size: 14px;
+  line-height: 30px;
+  color: #33323D;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 768px) {
+  .fylo-title, .insure-title {
+    font-size: 32px;
+  }
+  .fylo-content, .insure-content {
+    font-size: 16px;
+  }
+}
+
+.bookmark-section__btn {
+  font-family: "Public Sans";
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #33323D;
+  padding: 16px 32px;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.bookmark-section__btn:hover {
+  background-color: #33323D;
+  color: #fff;
+}
+
+.bookmark-background__img:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .bookmark-site__text {
+    width: 535px;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .bookmark-section__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .bookmark-section__info-site {
+    margin-right: 90px;
+    padding-top: 25px;
+    height: 450px;
+    margin-bottom: 0;
+  }
+  .bookmark-site__text {
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1110px) {
+  .bookmark-section__info-site {
+    margin-right: 125px;
+  }
+}
+
+.insure-left ::before {
+  content: '';
+  position: absolute;
+  background-image: url(../../img/<.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 8px;
+  height: 16px;
+  left: -35px;
+  top: 60px;
+  cursor: pointer;
+}
+
+.insure-right ::after {
+  content: '';
+  position: absolute;
+  background-image: url(../../img/>.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 8px;
+  height: 16px;
+  right: -35px;
+  top: 60px;
+  cursor: pointer;
+}
+
+.detail-section__btn {
+  font-family: "Public Sans";
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #33323D;
+  padding: 16px 32px;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.detail-section__btn:hover {
+  background-color: #33323D;
+  color: #fff;
+}
+
+.detail-background__img:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .detail-site__text {
+    width: 535px;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .detail-section__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .detail-section__info-site {
+    margin-right: 90px;
+    padding-top: 25px;
+    height: 450px;
+    margin-bottom: 0;
+  }
+  .detail-site__text {
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1110px) {
+  .detail-section__info-site {
+    margin-right: 125px;
+  }
+}
+
+.last-section__btn {
+  font-family: "Public Sans";
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #33323D;
+  padding: 16px 32px;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.last-section__btn:hover {
+  background-color: #33323D;
+  color: #fff;
+}
+
+.last-background__img:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .last-site__text {
+    width: 535px;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .last-section__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .last-section__info-site {
+    margin-right: 90px;
+    padding-top: 25px;
+    height: 450px;
+    margin-bottom: 0;
+  }
+  .last-site__text {
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1110px) {
+  .last-section__info-site {
+    margin-right: 125px;
   }
 }
 /*# sourceMappingURL=main.css.map */

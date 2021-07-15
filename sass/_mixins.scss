@@ -4,9 +4,10 @@
   justify-content: $justify;
 }
 
-@mixin flex-direction($flex-direction) {
+@mixin flex-direction($align, $justify, $flex-direction) {
   display: flex;
-  align-items: center;
+  align-items: $align;
+  justify-content: $justify;
   flex-direction: $flex-direction;
 }
 
@@ -34,5 +35,19 @@
   &:hover {
     background-color: $main-color;
     color: $light-color;
+  }
+}
+
+@mixin green-link {
+  font-family: $text-font;
+  font-size: 13px;
+  line-height: 30px;
+  color: #5FB4A2;
+  text-decoration: none;
+}
+
+@mixin breakpoint-up ($size) {
+  @media only screen and (min-width: $size) {
+    @content;
   }
 }

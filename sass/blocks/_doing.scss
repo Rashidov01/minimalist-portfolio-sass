@@ -1,6 +1,7 @@
 /* interesting-doing */
 .doing {
   margin-bottom: 150px;
+  margin-top: 50px;
 }
 
 .doing-heading {
@@ -63,7 +64,7 @@
 
 @media only screen and (min-width:1200px) {
   .doing-heading::after {
-    width: 534;
+    width: 510px;
     left: 110%;
   }
 }
