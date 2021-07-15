@@ -56,7 +56,7 @@
   background-color: $main-color;
   color: $light-color;
   transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
-  border: 1px solid #33323D;
+  border: 1px solid $main-color;
 
   &:hover {
     background-color: #eaeaeb;
